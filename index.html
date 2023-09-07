@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Snake and Ladder</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="div"><div class="board">
+            <div class="row">
+                <div id="b100" class="b100">100</div>
+                <div id="b99" class="b99">99🐍</div>
+                <div id="b98" class="b98">98</div>
+                <div id="b97" class="b97">97</div>
+                <div id="b96" class="b96">96</div>
+                <div id="b95" class="b95">95🐍</div>
+                <div id="b94" class="b94">94</div>
+                <div id="b93" class="b93">93</div>
+                <div id="b92" class="b92">92</div>
+                <div id="b91" class="b91">91🐍</div>
+            </div>
+            <div class="row">
+                <div id="b81" class="b81">81</div>
+                <div id="b82" class="b82">82</div>
+                <div id="b83" class="b83">83</div>
+                <div id="b84" class="b84">84</div>
+                <div id="b85" class="b85">85</div>
+                <div id="b86" class="b86">86</div>
+                <div id="b87" class="b87">87</div>
+                <div id="b88" class="b88">88</div>
+                <div id="b89" class="b89">89</div>
+                <div id="b90" class="b90">90</div>
+            </div>
+            <div class="row">
+                <div id="b80" class="b80">80</div>
+                <div id="b79" class="b79">79</div>
+                <div id="b78" class="b78">78</div>
+                <div id="b77" class="b77">77</div>
+                <div id="b76" class="b76">76</div>
+                <div id="b75" class="b75">75</div>
+                <div id="b74" class="b74">74</div>
+                <div id="b73" class="b73">73</div>
+                <div id="b72" class="b72">72</div>
+                <div id="b71" class="b71">71</div>
+            </div>
+            <div class="row">
+                <div id="b61" class="b61">61🪜</div>
+                <div id="b62" class="b62">62🐍</div>
+                <div id="b63" class="b63">63</div>
+                <div id="b64" class="b64">64</div>
+                <div id="b65" class="b65">65</div>
+                <div id="b66" class="b66">66</div>
+                <div id="b67" class="b67">67</div>
+                <div id="b68" class="b68">68🪜</div>
+                <div id="b69" class="b69">69</div>
+                <div id="b70" class="b70">70</div>
+            </div>
+            <div class="row">
+                <div id="b60" class="b60">60</div>
+                <div id="b59" class="b59">59</div>
+                <div id="b58" class="b58">58</div>
+                <div id="b57" class="b57">57🐍</div>
+                <div id="b56" class="b56">56</div>
+                <div id="b55" class="b55">55</div>
+                <div id="b54" class="b54">54</div>
+                <div id="b53" class="b53">53</div>
+                <div id="b52" class="b52">52🐍</div>
+                <div id="b51" class="b51">51</div>
+            </div>
+            <div class="row">
+                <div id="b41" class="b41">41</div>
+                <div id="b42" class="b42">42</div>
+                <div id="b43" class="b43">43🐍</div>
+                <div id="b44" class="b44">44</div>
+                <div id="b45" class="b45">45</div>
+                <div id="b46" class="b46">46</div>
+                <div id="b47" class="b47">47🪜</div>
+                <div id="b48" class="b48">48</div>
+                <div id="b49" class="b49">49</div>
+                <div id="b50" class="b50">50🪜</div>
+            </div>
+            <div class="row">
+                <div id="b40" class="b40">40🪜</div>
+                <div id="b39" class="b39">39</div>
+                <div id="b38" class="b38">38</div>
+                <div id="b37" class="b37">37</div>
+                <div id="b36" class="b36">36</div>
+                <div id="b35" class="b35">35</div>
+                <div id="b34" class="b34">34</div>
+                <div id="b33" class="b33">33</div>
+                <div id="b32" class="b32">32🐍</div>
+                <div id="b31" class="b31">31</div>
+            </div>
+            <div class="row">
+                <div id="b21" class="b21">21</div>
+                <div id="b22" class="b22">22</div>
+                <div id="b23" class="b23">23</div>
+                <div id="b24" class="b24">24</div>
+                <div id="b25" class="b25">25</div>
+                <div id="b26" class="b26">26</div>
+                <div id="b27" class="b27">27</div>
+                <div id="b28" class="b28">28</div>
+                <div id="b29" class="b29">29</div>
+                <div id="b30" class="b30">30</div>
+            </div>
+            <div class="row">
+                <div id="b20" class="b20">20</div>
+                <div id="b19" class="b19">19</div>
+                <div id="b18" class="b18">18</div>
+                <div id="b17" class="b17">17</div>
+                <div id="b16" class="b16">16</div>
+                <div id="b15" class="b15">15</div>
+                <div id="b14" class="b14">14</div>
+                <div id="b13" class="b13">13</div>
+                <div id="b12" class="b12">12</div>
+                <div id="b11" class="b11">11</div>
+            </div>
+            <div class="row">
+                <div id="b1" class="b1">1</div>
+                <div id="b2" class="b2">2</div>
+                <div id="b3" class="b3">3</div>
+                <div id="b4" class="b4">4🪜</div>
+                <div id="b5" class="b5">5</div>
+                <div id="b6" class="b6">6🪜</div>
+                <div id="b7" class="b7">7</div>
+                <div id="b8" class="b8">8</div>
+                <div id="b9" class="b9">9</div>
+                <div id="b10" class="b10">10</div>
+            </div>
+        </div></div>
+        <div class="score">
+            <div class="filler"></div>
+            <div class="computer">
+                <div class="color1"></div>
+                <div class="gap"></div>
+                <p class="text" id="player1">Player1 :  </p>
+                <p class="text" id="count1">0</p>
+            </div>
+            <div class="player">
+                <div class="color2"></div>
+                <div class="gap"></div>
+                <p class="text" id="player2">Player2 : </p>
+                <p class="text" id="count2">0</p>
+            </div>
+            <div class="roll">
+                <div class="roll1">
+                    <div id="dice1" class="dice">0</div>
+                    <div class="button1" id="button1" onmouseup="mouseup1()" onmousedown="mousedown1()" onclick="random1()">Roll</div>
+                </div>
+                <div class="roll2">
+                    <div id="dice2" class="dice">0</div>
+                    <div class="button2" id="button2" onmouseup="mouseup2()" onmousedown="mousedown2()" onclick="random2()">Roll</div>
+                </div>
+            </div>
+            <div class="filler" id="turntext">Player1 Turn</div>
+        </div>
+    </div>
+</body>
+</html>

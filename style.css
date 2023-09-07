@@ -1,0 +1,190 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+.filler{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;  
+    height: 25%;
+}
+.score{
+    width: 30%;
+    height: 100%;
+}
+.roll1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.roll2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.computer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.player{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.color1{
+    height: 30%;
+    width: 5%;
+    background-color: red;
+}
+.color2{
+    height: 30%;
+    width: 5%;
+    background-color: green;
+}
+.gap{
+    width: 2%;
+}
+.text{
+  font-weight: bold;
+  font-size: 30px;  
+}
+.player{
+    height: 10%;
+    width: 100%;
+}
+.roll{
+    height: 30%;
+    width: 100%;
+    display: flex;
+}
+.board{
+    width: 90%;
+    height: 85%;
+    background-color: green;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+}
+.row{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: aqua;
+    font-size: 18px;
+}
+.b1,.b3,.b5,.b7,.b9,.b11,.b13,.b15,.b17,.b19,.b21,.b23,.b25,.b27,.b29,.b31,.b33,.b35,.b37,.b39,.b41,.b43,.b45,.b47,.b49,.b51,.b53,.b55,.b57,.b59,.b61,.b63,.b65,.b67,.b69,.b71,.b73,.b75,.b77,.b79,.b81,.b83,.b85,.b87,.b89,.b91,.b93,.b95,.b97,.b99{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(219, 189, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.b2,.b4,.b6,.b8,.b10,.b12,.b14,.b16,.b18,.b20,.b22,.b24,.b26,.b28,.b30,.b32,.b34,.b36,.b38,.b40,.b42,.b44,.b46,.b48,.b50,.b52,.b54,.b56,.b58,.b60,.b62,.b64,.b66,.b68,.b70,.b72,.b74,.b76,.b78,.b80,.b82,.b84,.b86,.b88,.b90,.b92,.b94,.b96,.b98,.b100{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(145, 18, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.dice{
+    font-size: 55px;
+    font-weight: bold;
+}
+.button1{
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(to top right,rgb(54, 170, 209),lightblue);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    pointer-events: all;
+}
+.button2{
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(to top right,rgb(54, 170, 209),lightblue);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    pointer-events: none;
+}   
+@media screen and (max-width: 767px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .board{
+        width: 90%;
+        height: 85%;
+    }
+    .div{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .score{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .computer, .player{
+        margin-left: 25%;
+    }
+    .row{
+        font-size: 12px;
+    }
+    .dice{
+        font-size: 40px;
+    }
+    .button1, .button2{
+        width: 75px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .filler{
+        font-size: 20px;
+    }
+}
